@@ -1,0 +1,19 @@
+.link-list {
+  list-style: none;
+  padding-left: 0.25%;
+}
+.link-list li {
+  padding: .5%;
+  margin-bottom: .5em;
+}
+
+.link-list li span {
+  background-color: var(--para-back);
+  padding: .5%;
+}
+
+.link-list li a{
+  color: var(--text-col);
+  font-size: 105%;
+  text-decoration: none;
+}

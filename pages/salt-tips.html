@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/salt-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>salt</title>
+  </head>
+  <body>
+    <nav>
+    <ul class="nav-list">
+      <li> <a href="../index.html">Home</a></li>
+      <li> <a href="cool-links.html"> Cool Links</a></li>
+      <li> <a href="salt-tips.html">Salt Tips</a></li>
+    </ul>
+    </nav>
+    
+    <h2 class="top-head">Who's excited for precise measurements?!</h2>
+
+    <p class="para">Most recipes that call for salt give measurements volumetrically, but it turns out that a teaspoon of salt isn't always a teaspoon of salt! Different types of salt have different densities so if you want to be safe, always use a scale to measure your salt. </p>
+    <table> 
+
+    <div>
+      <a href="https://www.seriouseats.com/2013/03/ask-the-food-lab-do-i-need-to-use-kosher-salt.html">
+        <img src="https://www.seriouseats.com/2019/08/20190819-salt-guide-vicky-wasik14-.jpg" height="350">
+      </a>
+      <p id="salt-img-label"><span class="para">Click the picture above for an in depth article about it!</span></p>
+    </div>
+
+    <!-- what's up with thead vs th tags? 
+    good demo here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead -->
+
+    <thead>
+      <tr>
+        <th class="empty-cell"></th>
+        <th>Table Salt</th>
+        <th>Diamond Crystal</th>
+        <th>Morton's Kosher</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>g/tsp</th>
+        <td>6</td>
+        <td>3</td>
+        <td>4.7</td>
+      </tr>
+    </tbody>
+    </table>
+
+    <h3>Handy little conversion tool</h3>
+
+    <div id="salt-form">
+      <form>
+        <div class="form-q">
+        <label for="recipe-salt-name">
+          Salt Called for in Recipe
+          <select name="recipe-salt-name">
+            <option value="table">Table Salt</option>
+            <option value="diamond">Diamond Crystal</option>
+            <option value="kosher">Morton's Kosher</option>
+          </select>
+        </label>
+        </div>
+
+        <div class="form-q">
+        <label for="user-salt-name">
+          Your Salt Name
+          <select name="user-salt-name">
+            <option value="table">Table Salt</option>
+            <option value="diamond">Diamond Crystal</option>
+            <option value="kosher">Morton's Kosher</option>
+          </select>
+        </label>
+        </div>
+
+        <div class="form-q">
+        <label for="recipe-salt-amt">
+          Amount Called for in Recipe
+          <input type="number" name="recipe-salt-amt" step="any" placeholder="amt in teaspoons">
+        </label>
+        </div>
+
+        <input type="submit" value="Calculate!">
+      </form>
+    </div>
+  </body>
+</html>

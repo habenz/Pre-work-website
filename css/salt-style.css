@@ -1,0 +1,77 @@
+:root{
+  --table-highlight: #d1cdd1; /*whitish*/
+}
+
+.top-head {
+  text-decoration: underline;
+}
+
+img{
+  padding: 1%;
+  background-color: var(--img-back);
+  display: block;
+  margin: 0 auto 1em;
+}
+
+#salt-img-label {
+  text-align: center;
+}
+#salt-img-label span {
+  padding: .75%;
+}
+
+table {
+  background-color: var(--table-back);
+  font-size: 120%;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+  /*white-space: nowrap;*/
+}
+td, th {
+  border: 2px solid var(--table-highlight);
+  padding: .75%;
+}
+td {
+  padding-left: 1em;
+}
+
+.empty-cell {
+  background-color: var(--table-highlight);
+}
+
+h3 {
+  text-align: center;
+}
+
+form {
+  padding: 1em;
+  color: var(--text-col);
+  border-style: solid;
+  text-align: center;
+}
+form div {
+  padding: 1.5%;
+}
+
+#salt-form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+input[type="submit"] {
+  padding: 1% 1.5%;
+  background-color: var(--para-back);
+  color: var(--text-col);
+  font-size: 110%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px var(--img-back);
+  outline: none;
+}
+
+input[type="submit"]:active {
+  box-shadow: none;
+}
+
